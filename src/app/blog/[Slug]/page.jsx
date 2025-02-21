@@ -1,12 +1,12 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import { useParams } from "next/navigation"; 
 import { FakeSinglePost } from "../../api/useQuery";
 import SinglePost from "@/components/SinglePost";
 
-const SinglePage = ({ params }) => {
-  const { Slug } = params;
-
+const SinglePage = () => {
+  const { Slug } = useParams(); 
   const [singlePost, setSinglePost] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -27,10 +27,9 @@ const SinglePage = ({ params }) => {
     }
   }, [Slug]);
 
-  console.log(singlePost);
 
   return (
-    <div className="min-h-[100vh] bg-slate-100">
+    <div className="min-h-[200px]">
       {loading ? (
         <div className="flex justify-center items-center h-40">
           <p className="text-lg text-gray-900">Loading post...</p>

@@ -47,8 +47,8 @@ const BlogPage = () => {
   return (
     <div className="bg-slate-200 min-h-screen p-6 pt-40">
       <div className="container mx-auto">
-        <div className="flex justify-between">
-          <h1 className="text-3xl text-gray-900 font-bold mb-4">
+      <div className="flex flex-col lg:flex-row justify-between">
+      <h1 className="text-3xl text-gray-900 font-bold mb-4">
             Latest Blog Posts
           </h1>
 
