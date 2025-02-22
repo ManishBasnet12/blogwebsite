@@ -29,7 +29,7 @@ const SinglePage = () => {
 
 
   return (
-    <div className="min-h-[200px]">
+    <div className="pt-20 min-h-[95vh]  bg-slate-200">
       {loading ? (
         <div className="flex justify-center items-center h-40">
           <p className="text-lg text-gray-900">Loading post...</p>
