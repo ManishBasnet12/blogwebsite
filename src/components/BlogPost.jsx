@@ -6,7 +6,7 @@ function BlogPost({ img, price, category, title, summary, slug }) {
   return (
     <Link
       href={`/blog/${slug}`}
-      className="text-state-500  flex flex-col gap-2 shadow-sm bg-slate-100"
+      className="text-state-500  flex flex-col gap-2 shadow-sm bg-slate-200"
     >
       <Image
         className="w-[100%] aspect-[1] object-cover"
