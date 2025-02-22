@@ -49,7 +49,7 @@ const BlogPage = () => {
       <div className="container mx-auto">
       <div className="flex flex-col lg:flex-row justify-between">
       <h1 className="text-3xl text-gray-900 font-bold mb-4">
-            Latest Blog Posts
+            Latest  Posts
           </h1>
 
           {/* Search Bar */}
