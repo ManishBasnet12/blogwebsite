@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { FakePosts } from "../api/useQuery";
 import BlogPost from "../../components/BlogPost";
 
-const POSTS_PER_PAGE = 4;
+const POSTS_PER_PAGE = 5;
 
 const BlogPage = () => {
   const [posts, setPosts] = useState([]); // All posts
@@ -69,7 +69,7 @@ const BlogPage = () => {
               <p className="text-lg text-gray-900">Loading posts...</p>
             </div>
           ) : currentPosts.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-10 gap-y-20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5  gap-x-10 gap-y-20">
               {currentPosts.map((post) => (
                 <BlogPost
                   key={post.id}
